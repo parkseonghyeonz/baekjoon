@@ -1,0 +1,12 @@
+n = int(input())
+a=list(map(int, input().split()))
+m=int(input())
+b=list(map(int, input().split()))
+
+a=set(a)
+
+for i in b:
+    if i in a:
+        print(1, end=' ')
+    else:
+        print(0, end=' ')
